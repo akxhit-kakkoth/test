@@ -1,75 +1,124 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-h1{
-    color: yellow;
-}
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
     color: #333;
-    line-height: 1.6;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgb(0,0,0,0.1);
 }
 
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(95, 165, 25);
 }
 
-header h1 {
-    text-align: center;
-    margin: 0;
-    /*text-transform: uppercase;*/
-    font-size: 24px;
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav a {
-    color: #fff;
+.nav-links a{
     text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-nav a:hover {
-    background: #e8491d;
-    color: #fff;
+.nav-links a:hover{
+    color: #00b31b;
+}
+
+.hero{
+    background-image: linear-gradient(rgb(0,0,0,0.5),  rgb(0,0,0,0.5));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button{
+    background-color: #00b31b;
+    color: white;
+    padding: 15px 30ox;
+    text-decoration: none;
+    border-radius: 5xp;
+    font-weight: bold;
+    transition: background-color  0.3s;
+}
+
+.cta-button:hover{
+    background-color: #004494;
+}
+.services-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services-section h2{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Lifts the card on hover */
+}
+
+.service-card h3 {
+    margin-top: 0;
+    color: green;
 }
 
 footer {
-    background: #35424a;
-    color: #ffffff;
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
-}
-.gallery {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.gallery img {
-  width: 36%;
-  height: 450px;
-}
+
+
+
+
+
